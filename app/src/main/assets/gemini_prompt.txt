@@ -1,0 +1,45 @@
+# Bar/Pub Smoking Policy Analysis Prompt
+
+Analyze the provided images of bars/pubs and determine the likelihood that smoking is allowed in this establishment. Provide your assessment as a single number from 0-3 based on the scale below:
+
+## Scoring Scale:
+- **0**: Definitely non-smoking (clear no-smoking signs, absence of smoking-related items, modern clean environment)
+- **1**: Probably non-smoking (no visible smoking indicators, appears to follow smoking bans)
+- **2**: Possibly allows smoking (some ambiguous indicators, unclear signage, or mixed signals)
+- **3**: Smoking likely allowed (clear smoking indicators like ashtrays, lit cigarettes, smoking signs, or permissive atmosphere)
+
+## Visual Indicators to Look For:
+
+**Strong Smoking Indicators (lean toward 2-3):**
+- Ashtrays on tables, bars, or surfaces
+- People actively smoking cigarettes, cigars, or pipes
+- Signs explicitly allowing smoking
+- Cigarette vending machines
+- Heavy smoke/haze in the air
+- Stained walls/ceilings from smoke
+- Designated smoking areas or sections
+- Vintage/traditional pub atmosphere that predates smoking bans
+
+**Strong Non-Smoking Indicators (lean toward 0-1):**
+- "No Smoking" signs clearly visible
+- Modern, clean interior design
+- Absence of any smoking paraphernalia
+- Food service areas (many jurisdictions ban smoking where food is served)
+- Family-friendly atmosphere
+- Well-ventilated, bright spaces
+- Contemporary health-conscious branding
+
+**Ambiguous Factors:**
+- Outdoor seating areas (smoking may be permitted outside)
+- Jurisdictional differences (some regions still allow smoking in bars)
+- Time period of photo (older photos may show different regulations)
+
+## Instructions:
+1. Examine all provided images carefully
+2. Look for the indicators listed above
+3. Consider the overall atmosphere and setting
+4. If multiple images show conflicting information, base your score on the strongest evidence
+5. Be  very concise in explaining your result! No full sentences, just a list of bulletpoints
+
+**Output Format:**
+$NUMERICAL SCORE // lists of keywords why and how you arrived at that result

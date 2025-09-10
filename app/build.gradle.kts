@@ -18,7 +18,10 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         
         // Add your Google Places API key here
-        buildConfigField("String", "PLACES_API_KEY", "\"YOUR_API_KEY_HERE\"")
+        buildConfigField("String", "PLACES_API_KEY", "\"AIzaSyCyiO0xDeeQ4MNlM2bdJKPfCtjuw_b-7Ig\"")
+        
+        // Add your Google Gemini API key here
+        buildConfigField("String", "GEMINI_API_KEY", "\"AIzaSyCKCgz4aXYN02e3ORg2O4PCLqdS4XNNZj0\"")
     }
 
     buildTypes {
@@ -57,6 +60,8 @@ dependencies {
     implementation(libs.retrofit.gson)
     implementation(libs.okhttp.logging)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.coil.compose)
+    implementation(libs.google.ai.client)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

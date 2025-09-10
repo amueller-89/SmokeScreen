@@ -1,7 +1,9 @@
 package com.example.smokescreen.di
 
+import android.content.Context
 import com.example.smokescreen.data.api.PlacesApiService
 import com.example.smokescreen.data.repository.PlacesRepository
+import com.example.smokescreen.data.repository.GeminiRepository
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -28,4 +30,8 @@ object NetworkModule {
     val placesApiService: PlacesApiService = retrofit.create(PlacesApiService::class.java)
     
     val placesRepository = PlacesRepository(placesApiService)
+    
+    fun getGeminiRepository(context: Context): GeminiRepository {
+        return GeminiRepository(context)
+    }
 }
